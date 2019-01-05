@@ -1,0 +1,9 @@
+Object Life Cycle
+  1. Declared in a .java file.
+  2. If static, can be used immediately with static properties.
+  3. If not static, must be instantiated with the new keyword thus becomes an object and assigned to an object reference variable.
+  4. As soon as an object loses all of it's reference variables, it becomes eligible for garbage collection which means the memory that it 
+      once occupied is freed and returned to the heap to be repurposed.
+      
+ 
+  
