@@ -5,5 +5,47 @@ Object Life Cycle
   4. As soon as an object loses all of it's reference variables, it becomes eligible for garbage collection which means the memory that it 
       once occupied is freed and returned to the heap to be repurposed.
       
- 
+Describe how the basic data types are represented in memory (boolean, int, long, String, array of ints, array of Objects, class with fields) 
+  boolean: 1 bit; 0 = false, 1 = true
+  char: 16 bits
+  int:  32 bits; number from -32768 to 32767
+  long:  64 bits; number from ‐9,223,372,036,854,775,808 to 9,223,372,036,854,775,807
+  String: an object which is a sequence of characters, immutable
+  array of ints:  a container with a fixed number of ints
+  array of Objects:  a container with a fixed number of Objects
+
+Compare and contrast StringBuffer and StringBuilder and when to use each
+  StringBuffer:  Thread safe (synchronized), less efficient
+  StringBuilder, Not thread safe (non-synchronized), more efficient
   
+ArrayList	
+  Can contain duplicate elements
+  Maintains insertion order
+  non-synchronized
+  Allows random access using index value
+  Manipulation is slow (when removing elements)
+LinkedList	
+  Uses doubly-linked lists to store elements
+  Can contain duplicate elements
+  Maintains insertion order
+  non-synchronized
+  Fast because no manipulation required to add/remove elements
+  Can be used as a list, stack or queue
+HashMap	
+  Stores key/value pairs
+  Contains values based on a hash key
+  Contains only unique elements
+  May have one null key and multiple null values
+  Maintains no order
+HashSet	
+  Stores objects
+  Allows a null element
+  Objects are stored using a hash mechanism
+  Contains only unique elements
+  Does not maintain order
+TreeSet	
+  Contains only unique elements
+  null elements not allowed
+  Fast access and retrieval
+  Maintains ascending order
+
