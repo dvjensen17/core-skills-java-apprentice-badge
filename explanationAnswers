@@ -49,3 +49,10 @@ TreeSet
   Fast access and retrieval
   Maintains ascending order
 
+TO_DO:
+Common piece of logic in three ways.
+Parameters Final example
+Encapsulation example
+Casting
+Overriding Method in inherited(subclass) class
+Virutal method invocation
